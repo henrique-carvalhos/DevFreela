@@ -57,7 +57,7 @@ namespace DevFreela.API.Controllers
         //URL = api/project/id (1,2 ou ...)
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] UpdateProjectModel updateProjectModel)
-            // passa o dentificador e o corpo da requisição do obejto que será atualizado
+            // passa o identificador e o corpo da requisição do obejto que será atualizado
         {
             if (updateProjectModel.Description.Length > 200)
             {
